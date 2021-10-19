@@ -1,10 +1,9 @@
 import {
   Component,
   OnInit,
-  ElementRef,
-  ViewChild, OnDestroy
+  OnDestroy,
+  ViewChild
 } from '@angular/core';
-
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
@@ -55,7 +54,6 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   onClear() {
     this.slForm.reset();
     this.editMode = false;
-    // (<FormArray>this.recipeForm.get('ingredients')).clear();
   }
 
   onDelete() {
